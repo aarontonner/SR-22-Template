@@ -14,42 +14,57 @@ eleventyNavigation:
 <link rel="stylesheet" href="/assets/css/components.css" />
 {% endblock %} {% block body %}
 
+
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-329">
-  <div class="cs-container">
-    <div class="cs-flex-group">
-      <h1 class="cs-title">
-        <span class="cs-accent">SR22</span> insurance LOCATION
-      </h1>
-      <p class="cs-text">Body</p>
-      <div class="cs-button-group">
-        <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
-          >{{client.phoneFormatted}}</a
-        >
-      </div>
+<section id="hero-1949">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Title</h1>
+            <p class="cs-text">Body</p>
+            <a href="" class="cs-button-solid">{{client.phoneFormatted}}</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <h3 class="cs-h3">Heading</h3>
+                <p class="cs-item-text">
+                    Body
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Heading</h3>
+                <p class="cs-item-text">
+                    Body
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Heading</h3>
+                <p class="cs-item-text">
+                    Body
+                </p>
+            </li>
+            <li class="cs-item">
+                <h3 class="cs-h3">Heading</h3>
+                <p class="cs-item-text">
+                   Body
+                </p>
+            </li>
+        </ul>
     </div>
-  </div>
 
-  <!-- Background Image -->
-  <picture class="cs-background">
-    <source media="(max-width: 600px)" srcset="/assets/images/hero.jpg" />
-    <source media="(min-width: 601px)" srcset="/assets/images/hero.jpg" />
-    <img
-      decoding="async"
-      src="/assets/images/hero.jpg"
-      alt="sr22 insurance "
-      width="2250"
-      height="1500"
-      aria-hidden="true"
-    />
-  </picture>
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/banner2.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner2.jpg">
+        <img decoding="async" src="/assets/images/banner2.jpg" alt="sr22 insurance" width="2250" height="1500" aria-hidden="true">
+    </picture>
 </section>
+                                
 
 <!-- ============================================ -->
-<!--                  Services                    -->
+<!--                  Services - TYPES -->
 <!-- ============================================ -->
 
 <section id="services-1666">
@@ -64,7 +79,7 @@ eleventyNavigation:
           loading="lazy"
           decoding="async"
           src="/assets/images/2.jpg"
-          alt="sr22 insurance in "
+          alt="types of sr22 insurance in "
           width="605"
           height="690"
         />
@@ -72,7 +87,7 @@ eleventyNavigation:
     </div>
     <div class="cs-content">
       <span class="cs-topper">we've got you covered</span>
-      <h2 class="cs-title">Title</h2>
+      <h2 class="cs-title">Types</h2>
       <p class="cs-text">Body</p>
       <ul class="cs-faq-group">
         <li class="cs-faq-item active">
@@ -84,6 +99,57 @@ eleventyNavigation:
               decoding="async"
               src="/assets/images/sr-22-coverage.svg"
               alt="sr22 insurance new hampshire coverage"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22 coverage"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading </span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
               width="32"
               height="32"
             />
@@ -117,158 +183,8 @@ eleventyNavigation:
   </div>
 </section>
 
-{% include 'components/cta.html' %}
-
 <!-- ============================================ -->
-<!--                Side By Side                  -->
-<!-- ============================================ -->
-
-<section id="RTsbs-1594">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <!--Top left image-->
-      <picture class="cs-picture cs-picture1 shadow">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/3.jpg" />
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/3.jpg" />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/3.jpg"
-          alt=""
-          width="413"
-          height="500"
-        />
-      </picture>
-      <!--Top Right image-->
-      <picture class="cs-picture cs-picture2 shadow">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/4.jpg" />
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/4.jpg" />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/4.jpg"
-          alt="affordable sr22 insurance in "
-          width="413"
-          height="280"
-        />
-      </picture>
-    </div>
-    <div class="cs-content">
-      <span class="cs-topper">explore your options</span>
-      <h2 class="cs-title">Heading</h2>
-      <p class="cs-text">Body</p>
-      <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
-        >Call Now: {{client.phoneFormatted}}</a
-      >
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--             Side By Side Reverse             -->
-<!-- ============================================ -->
-
-<section id="RTsbsr-1594">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <!--Top left image-->
-      <picture class="cs-picture cs-picture1">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/5.jpg" />
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/5.jpg" />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/5.jpg"
-          alt="sr22 insurance"
-          width="413"
-          height="500"
-        />
-      </picture>
-      <!--Top Right image-->
-      <picture class="cs-picture cs-picture2">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/6.jpg" />
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/6.jpg" />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/6.jpg"
-          alt="6"
-          width="413"
-          height="280"
-        />
-      </picture>
-    </div>
-    <div class="cs-content">
-      <span class="cs-topper">what you need</span>
-      <h2 class="cs-title">Heading</h2>
-      <p class="cs-text">Body</p>
-       <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
-        >Call Now {{client.phoneFormatted}}</a
-      >
-    </div>
-  </div>
-</section>
-{% include 'components/cta.html' %}
-
-<!-- ============================================ -->
-<!--                Side By Side                  -->
-<!-- ============================================ -->
-
-<section id="RTsbs-1594">
-  <div class="cs-container">
-    <div class="cs-image-group">
-      <!--Top left image-->
-      <picture class="cs-picture cs-picture1 shadow">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/7.jpg" />
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/7.jpg" />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/7.jpg"
-          alt=""
-          width="413"
-          height="500"
-        />
-      </picture>
-      <!--Top Right image-->
-      <picture class="cs-picture cs-picture2 shadow">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/8.jpg" />
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/8.jpg" />
-        <img
-          loading="lazy"
-          decoding="async"
-          src="/assets/images/8.jpg"
-          alt="sr22 insurance providers"
-          width="413"
-          height="280"
-        />
-      </picture>
-    </div>
-    <div class="cs-content">
-      <span class="cs-topper">find the best</span>
-      <h2 class="cs-title">Heading</h2>
-      <p class="cs-text">Body</p>
-      <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
-        >Call Now: {{client.phoneFormatted}}</a
-      >
-    </div>
-  </div>
-</section>
-
-<!-- ============================================ -->
-<!--                  Services                    -->
+<!--                  Services - WHY YOU NEED -->
 <!-- ============================================ -->
 
 <section id="services-1667">
@@ -283,7 +199,7 @@ eleventyNavigation:
           loading="lazy"
           decoding="async"
           src="/assets/images/9.jpg"
-          alt="sr22 insurance cost "
+          alt="what is sr22 insurance "
           width="605"
           height="690"
         />
@@ -292,7 +208,7 @@ eleventyNavigation:
       <img
         class="cs-floater"
         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg"
-        alt="cost of sr22 insurance "
+        alt="why you need sr22 insurance "
         loading="lazy"
         decoding="async"
         height="710"
@@ -301,8 +217,8 @@ eleventyNavigation:
       />
     </div>
     <div class="cs-content">
-      <span class="cs-topper">your investment</span>
-      <h2 class="cs-title">Title</h2>
+      <span class="cs-topper">get the help you need</span>
+      <h2 class="cs-title">Why</h2>
       <p class="cs-text">Body</p>
       <ul class="cs-faq-group">
         <li class="cs-faq-item active">
@@ -356,6 +272,23 @@ eleventyNavigation:
           </button>
           <p class="cs-item-p">Body</p>
         </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22 insurance"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
       </ul>
       <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
         >{{client.phoneFormatted}}</a
@@ -367,6 +300,419 @@ eleventyNavigation:
 {% include 'components/cta.html' %}
 
 <!-- ============================================ -->
+<!--                 Side By Side - REQUIREMENTS  -->
+<!-- ============================================ -->
+
+<section id="sbs-1443">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="sr22 requirements" width="650" height="600" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">our sr22 experts are here to help</span>
+            <h2 class="cs-title">Requirements</h2>
+            <p class="cs-text">
+                Body
+            </p>
+            <ul class="cs-card-group">
+                <li class="cs-li">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Title</h3>
+                        <p class="cs-li-text">
+                            Body
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Title</h3>
+                        <p class="cs-li-text">
+                            Body
+                        </p>
+                    </div>
+                </li>
+            </ul>     
+            <a href="tel:{{client.phoneForTel}}" class="cs-button-solid">{{client.phoneFormatted}}</a>        
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side - COSTS          -->
+<!-- ============================================ -->
+
+<section id="sbs-1636">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">SR22 cost breakdown</span>
+                <h2 class="cs-title">Title</h2>
+            </div>
+            <div class="cs-flex">
+              <div>
+                <h3 class="cs-h3">
+                    Heading
+                </h3>
+                <p class="cs-text">
+                    Body
+                </p>
+              </div>
+              <div>
+                <h3 class="cs-h3">
+                    Heading
+                </h3>
+                <p class="cs-text">
+                    Body
+                </p>
+              </div>
+              <div>
+                <h3 class="cs-h3">
+                    Heading
+                </h3>
+                <p class="cs-text">
+                    Body
+                </p>
+              </div>
+                <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+        >{{client.phoneFormatted}}</a
+      >
+            </div>
+        </div>  
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="sr22 cost" width="1280" height="620">
+        </picture>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--  Side By Side Reverse - EXTRA (2 photos)     -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-1594">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/5.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/5.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/5.jpg"
+          alt="sr22 insurance"
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/6.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/6.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/6.jpg"
+          alt="6"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">what you need</span>
+      <h2 class="cs-title">Heading</h2>
+      <p class="cs-text">Body</p>
+       <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+        >Call Now {{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--   Side By Side - EXTRA (2 photos)            -->
+<!-- ============================================ -->
+
+<section id="RTsbs-1594">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <!--Top left image-->
+      <picture class="cs-picture cs-picture1 shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/7.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/7.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/7.jpg"
+          alt=""
+          width="413"
+          height="500"
+        />
+      </picture>
+      <!--Top Right image-->
+      <picture class="cs-picture cs-picture2 shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/8.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/8.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/8.jpg"
+          alt="sr22 insurance providers"
+          width="413"
+          height="280"
+        />
+      </picture>
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">find the best</span>
+      <h2 class="cs-title">Heading</h2>
+      <p class="cs-text">Body</p>
+      <a href="tel:{{client.phoneForTel}}" class="cs-button-solid"
+        >Call Now: {{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services - LOCATIONS        -->
+<!-- ============================================ -->
+
+<section id="services-1667">
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture shadow">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/hero.jpg" />
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/hero.jpg" />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/hero.jpg"
+          alt="sr22 insurance "
+          width="605"
+          height="690"
+        />
+      </picture>
+      <!--SVG Graphic-->
+      <img
+        class="cs-floater"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg"
+        alt="sr22 insurance "
+        loading="lazy"
+        decoding="async"
+        height="710"
+        aria-hidden="true"
+        width="690"
+      />
+    </div>
+    <div class="cs-content">
+      <span class="cs-topper">state-wide tailored sr22 solutions</span>
+      <h2 class="cs-title">Title</h2>
+      <div>
+      <h3>Heading</h3>
+      <p class="cs-text">Body</p>
+      </div>
+      <div>
+        <h3>Heading</h3>
+      <ul class="cs-faq-group">
+        <li class="cs-faq-item active">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text">Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text">Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/assets/images/sr-22-coverage.svg"
+              alt="sr22"
+              width="32"
+              height="32"
+            />
+            <span class="cs-button-text"> Dropdown Heading</span>
+            <span class="cs-indicator" aria-hidden="true"></span>
+          </button>
+          <p class="cs-item-p">Body</p>
+        </li>
+      </ul>
+      </div>
+      <a href="tel: {{client.phoneForTel}}" class="cs-button-solid"
+        >{{client.phoneFormatted}}</a
+      >
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
 <!--                    FAQ                       -->
 <!-- ============================================ -->
 
@@ -374,7 +720,7 @@ eleventyNavigation:
   <div class="cs-container">
     <div class="cs-content">
       <span class="cs-topper">Get The Answers You Need</span>
-      <h2 class="cs-title">FAQ Title</h2>
+      <h2 class="cs-title">FAQ</h2>
       <p class="cs-text">Body</p>
     </div>
     <div class="cs-flex-group">
@@ -390,6 +736,24 @@ eleventyNavigation:
         <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
         <ul class="cs-faq-group" data-category="one">
           <!-- Active class added as default -->
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">Q</span>
+            </button>
+            <p class="cs-item-p">A</p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">Q</span>
+            </button>
+            <p class="cs-item-p">A</p>
+          </li>
+          <li class="cs-faq-item">
+            <button class="cs-button">
+              <span class="cs-button-text">Q</span>
+            </button>
+            <p class="cs-item-p">A</p>
+          </li>
           <li class="cs-faq-item">
             <button class="cs-button">
               <span class="cs-button-text">Q</span>

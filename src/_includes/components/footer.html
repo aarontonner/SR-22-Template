@@ -17,12 +17,12 @@
       </a>
       <p>
         We specialize in providing fast, affordable, and hassle-free SR22
-        insurance solutions tailored to meet LOCATION state requirements. Whether
-        it's due to a DUI, traffic violations, or driving without insurance, we
-        understand the importance of getting you back on the road quickly and
-        confidently. Trust our team of experts to handle your SR22 filing with
-        precision and care. Secure your driving future today and get back on the
-        road!
+        insurance solutions tailored to meet LOCATION state requirements.
+        Whether it's due to a DUI, traffic violations, or driving without
+        insurance, we understand the importance of getting you back on the road
+        quickly and confidently. Trust our team of experts to handle your SR22
+        filing with precision and care. Secure your driving future today and get
+        back on the road!
       </p>
     </div>
     <div class="right-section">
@@ -34,6 +34,9 @@
           <li>
             <a href="/">Home</a>
           </li>
+          <li>
+            <a href="/sitemap">Sitemap</a>
+          </li>
         </ul>
         <ul>
           <li>
@@ -42,24 +45,31 @@
           <li>
             <a href="/">New Hampshire</a>
           </li>
+          <li>Location</li>
+          <li>Location</li>
+          <li>Location</li>
         </ul>
         <ul>
           <li>
             <h2>Contact</h2>
           </li>
           <li>
+            {#
             <a href="/contact">
               {{client.address.city}} {{client.address.state}}
             </a>
+            #}
           </li>
           <li>
             <a href="tel:{{client.phoneForTel}}">
               T: {{client.phoneFormatted}}
             </a>
           </li>
+          {#
           <li>
             <a href="mailto:{{client.email}}">Click to Email</a>
           </li>
+          #}
         </ul>
       </div>
     </div>
